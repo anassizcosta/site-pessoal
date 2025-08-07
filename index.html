@@ -74,7 +74,7 @@
     }
 
         a{
-            color: aquamarine;
+            color: rgb(214, 46, 183);
             text-decoration: none;
 
         }
@@ -83,6 +83,33 @@
             text-decoration: underline;
             cursor: pointer;
         }
+
+        .buttons {
+            text-align: right;
+                    
+        }
+
+        .buttons-visualizacao {
+            font-size: 15px;
+            color: rgb(173, 19, 89);
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            }
+
+            .modo-grade {
+                padding-top: 20px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .modo-grade section {
+                width: 40%;
+            }
 
 </style>
 <body>
@@ -93,7 +120,12 @@
 
         <p> Estudante de programação</p>
     </header>
-    <main>
+
+    <div class="buttons">
+        <button class="buttons-visualizacao" onclick="MudarGrade()">Visualização Grade</button>
+        <button class="buttons-visualizacao" onclick="mudarLista()">Visualização Lista</button>
+    </div>
+    <main id="principal">
   <section>
         <h2>
             Minhas habilidades
@@ -147,8 +179,22 @@
    
     </main>
      <footer>
-        &copy; 2025 anaassizcosta. Todos os direitos reservados
+        &copy; 2025 anaassiz. Todos os direitos reservados
     </footer>
   
 </body>
+<script>
+    function MudarGrade() {
+        const principal = document.getElementById('principal')
+        principal.classList.toggle('modo-grade')
+    }
+   
+</script>
+
+<script>
+     function mudarLista() {
+        const principal = document.getElementById('principal')
+        principal.classList.remove('modo-grade')
+    }
+</script>
 </html>
