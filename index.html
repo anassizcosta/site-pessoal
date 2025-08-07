@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Pessoal</title>
+
 </head>
 
 <style>
@@ -16,7 +17,6 @@
     }
 
     header{
-
         background-color: rgb(247, 171, 213);
         text-align: center;
         color: rgb(211, 39, 162);
@@ -25,23 +25,19 @@
     }
 
     header h1{
-
         font-size: 40px;
         margin-bottom: 30px;
     }
 
     header p {
-
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 22px;
     }
 
     main {
-        
         padding-top: 10px;
         width: 400px;
         margin: 0 auto;
-        
     }
 
     section{
@@ -50,10 +46,6 @@
         border-radius: 15px;
         border: 1px solid;
         margin-bottom: 15px;
-    }
-
-   section h2{
-        
     }
 
     ul{
@@ -70,134 +62,142 @@
         text-align: center;
         padding: 20px;
         font-size: 20px;
-
     }
 
-        a{
-            color: rgb(214, 46, 183);
-            text-decoration: none;
+    a{
+        color: rgb(214, 46, 183);
+        text-decoration: none;
+    }
 
-        }
+    a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
-        a:hover{
-            text-decoration: underline;
-            cursor: pointer;
-        }
+    .buttons {
+        text-align: right;
+    }
 
-        .buttons {
-            text-align: right;
-                    
-        }
+    .buttons-visualizacao {
+        font-size: 15px;
+        color: rgb(173, 19, 89);
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
-        .buttons-visualizacao {
-            font-size: 15px;
-            color: rgb(173, 19, 89);
-            margin-top: 20px;
-            margin-right: 10px;
-            margin-left: 10px;
-            }
+    .modo-grade {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
 
-            .modo-grade {
-                padding-top: 20px;
-                margin: 0 auto;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                justify-content: center;
-                width: 100%;
-            }
+    .modo-grade section {
+        width: 40%;
+    }
 
-            .modo-grade section {
-                width: 40%;
-            }
+    .mudacor {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
 
+    .mudacor section {
+        width: 40%;
+    }
 </style>
-<body>
+<body id="fundo">
     <header>
         <h1>
             Bem vindo a minha página
         </h1>
-
         <p> Estudante de programação</p>
     </header>
 
     <div class="buttons">
         <button class="buttons-visualizacao" onclick="MudarGrade()">Visualização Grade</button>
         <button class="buttons-visualizacao" onclick="mudarLista()">Visualização Lista</button>
+        <button class="buttons-visualizacao" onclick="mudacor()">Mudar a Cor</button>
     </div>
     <main id="principal">
-  <section>
-        <h2>
-            Minhas habilidades
-        </h2>
-        <ul>
-            <li>
-                <a href="https://youtu.be/gMxQ8vxH9Vk?si=NhjLlYINI8hajJuD">Lógica de programação</a>
-            </li>
-            <li>
-               <a href="https://youtu.be/5Hn58p-hYC0?si=ZYm_jDMFLtpq2Un3">HTML & CSS</a> 
-            </li>
-            <li>
-                <a href="https://youtu.be/Qdcqng0lYGQ?si=772TCahayDwaF4sj">Trabalho em Equipe</a>
-            </li>
-            <li><a href="https://youtu.be/9MgnhictWRg?si=zJsK6ZxE11HQByel">IOT</a>
-            </li>
-        </ul>
-    </section>
+        <section>
+            <h2>Minhas habilidades</h2>
+            <ul>
+                <li><a href="https://youtu.be/gMxQ8vxH9Vk?si=NhjLlYINI8hajJuD">Lógica de programação</a></li>
+                <li><a href="https://youtu.be/5Hn58p-hYC0?si=ZYm_jDMFLtpq2Un3">HTML & CSS</a></li>
+                <li><a href="https://youtu.be/Qdcqng0lYGQ?si=772TCahayDwaF4sj">Trabalho em Equipe</a></li>
+                <li><a href="https://youtu.be/9MgnhictWRg?si=zJsK6ZxE11HQByel">IOT</a></li>
+                <img src="https://evalart.com/wp-content/uploads/2023/03/nggallery_import/Que-son-las-habilidades-blandas-y-como-te-pueden-ayudar-a-encontrar-un-mejor-empleo-web.webp" alt="" height="160px" width="290px">
+            </ul>
+        </section>
 
-    <section>
-        <h2> Cursos</h2>
-        <ul>
-            <li><a href="https://betrybe.com/cursos/logica-de-programacao">Curso de Lógica de programação</a></li>
-            <li><a href="https://cursa.app/pt/curso-gratuito/redes-de-computadores-do-zero-dibg">Redes com IOT</a></li>
-            <li><a href="https://cursa.app/pt/curso-gratuito/sistemas-operacionais-completo-dhfd">Sistemas operacionais</a></li>
-            <li><a href="https://cursa.app/pt/curso-gratuito/analise-de-requisitos-de-software-dhci">Levantamento de requisitos</a></li>
-        </ul>
-    </section>
+        <section>
+            <h2>Cursos</h2>
+            <ul>
+                <li><a href="https://betrybe.com/cursos/logica-de-programacao">Curso de Lógica de programação</a></li>
+                <li><a href="https://cursa.app/pt/curso-gratuito/redes-de-computadores-do-zero-dibg">Redes com IOT</a></li>
+                <li><a href="https://cursa.app/pt/curso-gratuito/sistemas-operacionais-completo-dhfd">Sistemas operacionais</a></li>
+                <li><a href="https://cursa.app/pt/curso-gratuito/analise-de-requisitos-de-software-dhci">Levantamento de requisitos</a></li>
+                <img src="https://www.catho.com.br/carreira-sucesso/wp-content/uploads/sites/3/2023/06/cursos-online-gratuitos.jpg" alt="" height="160px" width="290px">
+            </ul>
+        </section>
 
-    <section>
-        <h2>
-            Meus hobbies
-        </h2>
-        <ul>
-            <li><a href="https://portal.pucrs.br/noticias/saude/habito-de-leitura/">Ler livros</a></li>
-            <li><a href="https://comunidade.nubank.com.br/t/assistir-filmes-e-series-pode-ter-benef%C3%ADcios/588049">Assistir séries</a></li>
-            <li><a href="https://www.nationalgeographicbrasil.com/ciencia/2022/11/o-que-e-o-sono-e-por-que-dormimos">Dormir</a></li>
-            <li><a href="https://www.cnnbrasil.com.br/saude/brincar-com-caes-ajuda-a-reduzir-estresse-novo-estudo-diz-que-sim/">Brincar com os cachorros</a></li>
-        </ul>
-    </section>
-    <section>
-        <h2>Contatos</h2>
-        <ul>
-            <li>
-                <a href="mailto:anaassizcosta@gmail.com">e-mail: anaassizcosta@gmail.com</a>
-            </li>
-            <li><a href="https://linkedin.com">linkedin</a></li>
-            <li><a href="https://github.com/anassizcosta">Github</a></li>
-           
-        </ul>
-    </section>
-
-   
+        <section>
+            <h2>Meus hobbies</h2>
+            <ul>
+                <li><a href="https://portal.pucrs.br/noticias/saude/habito-de-leitura/">Ler livros</a></li>
+                <li><a href="https://comunidade.nubank.com.br/t/assistir-filmes-e-series-pode-ter-benef%C3%ADcios/588049">Assistir séries</a></li>
+                <li><a href="https://www.nationalgeographicbrasil.com/ciencia/2022/11/o-que-e-o-sono-e-por-que-dormimos">Dormir</a></li>
+                <li><a href="https://www.cnnbrasil.com.br/saude/brincar-com-caes-ajuda-a-reduzir-estresse-novo-estudo-diz-que-sim/">Brincar com os cachorros</a></li>
+                <img src="https://shopee.com.br/blog/wp-content/uploads/2023/02/14-Tipos-de-hobbies-para-comecar-a-praticar-em-2023.jpg" alt="" width="290px" height="160px">
+            </ul>
+        </section>
+        <section>
+            <h2>Contatos</h2>
+            <ul>
+                <li><a href="mailto:anaassizcosta@gmail.com">e-mail: anaassizcosta@gmail.com</a></li>
+                <li><a href="https://linkedin.com">linkedin</a></li>
+                <li><a href="https://github.com/anassizcosta">Github</a></li>
+                <img src="https://portais.univasf.edu.br/srca/secretaria-de-registro-e-controle-academico/contato/contatos.png" alt="" height="160px" width="290px">
+            </ul>
+        </section>
     </main>
-     <footer>
+    <footer>
         &copy; 2025 anaassiz. Todos os direitos reservados
     </footer>
-
-  
 </body>
 <script>
     function MudarGrade() {
         const principal = document.getElementById('principal')
         principal.classList.toggle('modo-grade')
     }
-   
-</script>
 
-<script>
-     function mudarLista() {
+    function mudarLista() {
         const principal = document.getElementById('principal')
         principal.classList.remove('modo-grade')
+    }
+
+    function mudacor() {
+        const fundo = document.getElementById('fundo');
+        
+        const colors = [
+            'rgb(249, 148, 204)', // Original pink
+            'rgb(173, 216, 230)', // Light blue
+            'rgb(221, 160, 221)', // Light purple
+            'rgb(255, 182, 193)', // Light pink
+            'rgb(240, 230, 140)'  // Light yellow
+        ];
+       
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        fundo.style.backgroundColor = randomColor;
     }
 </script>
 </html>
